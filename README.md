@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [fem-product-preview-card-component](https://github.com/fortune-i-o/fem-product-preview-card-component.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [product-preview-card-repository](https://github.com/fortune-i-o/fem-product-preview-card-component.git)
+- Live Site URL: [fem-product-preview-card-component.pages.dev](https://fem-product-preview-card-component.pages.dev/)
 
 ## My process
 
