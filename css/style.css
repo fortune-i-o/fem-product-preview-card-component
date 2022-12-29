@@ -25,6 +25,11 @@ picture {
   flex: 1.2;
 }
 
+img{
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background-color: var(--cream);
   font-family: "Montserrat", sans-serif;
@@ -113,11 +118,16 @@ button {
   outline: none;
   text-align: center;
   cursor: pointer;
+  transition: 0.2s ease-in;
 }
 
-button:active {
+button:hover {
   --dark-cyan: hsl(158, 36%, 25%);
   background: var(--dark-cyan);
+}
+
+button img{
+  width: 1rem;
 }
 
 .attribution {
