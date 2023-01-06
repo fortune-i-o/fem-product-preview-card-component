@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](screenshots/product-preview-card-component-main.png)
+![product-preview-card-component-desktop](screenshots/product-preview-card-component-main-desktop.png)
 
 ### Links
 
