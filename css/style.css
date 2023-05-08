@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 
 :root {
-  --dark-cyan: hsl(158, 36%, 37%);
-  --cream: hsl(30, 38%, 92%);
-  --white: hsl(0, 0%, 100%);
-  --very-dark-blue: hsl(212, 21%, 14%);
-  --dark-grayish-blue: hsl(228, 12%, 48%);
-  --card-shadow: #c0bfb89e;
+  --clr-neutral-100: hsla(53, 6%, 74%, 0.62);
+  --cl-neutral-200: hsl(0, 0%, 100%);
+  --clr-neutral-300: hsl(30, 38%, 92%);
+  --clr-neutral-600: hsl(228, 12%, 48%);
+  --clr-neutral-700: hsl(212, 21%, 14%);
+  --clr-primary: hsl(158, 36%, 37%);
 }
 
 * {
@@ -17,7 +17,7 @@
 
 body {
   align-items: center;
-  background-color: var(--cream);
+  background-color: var(--clr-neutral-300);
   display: flex;
   font-family: "Montserrat", sans-serif;
   flex-direction: column;
@@ -36,40 +36,40 @@ img {
   width: 100%;
 }
 
-h1 {
-  color: var(--very-dark-blue);
+h2 {
+  color: var(--clr-neutral-700);
 }
 
 p {
-  color: var(--dark-grayish-blue);
+  color: var(--clr-neutral-600);
   font-size: 0.875rem;
   font-weight: 500;
 }
 
 .card,
-.product-info,
-.price,
-button {
+.card__product-info,
+.card__product-price,
+.button {
   display: flex;
 }
 
 .card,
-button {
+.button {
   border-radius: 0.625rem;
 }
 
-h1,
+h2,
 #new-price {
   font-family: "Fraunces", serif;
 }
 
 #new-price,
 .attribution a {
-  color: var(--dark-cyan);
+  color: var(--clr-primary);
 }
 
 .card {
-  background-color: var(--white);
+  background-color: var(--cl-neutral-200);
   height: 33.75em;
   margin-top: 1rem;
   max-width: 45.625em;
@@ -77,47 +77,48 @@ h1,
   width: 90%;
 }
 
-.product-info {
+.card__product-info {
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1;
   padding: 0.5rem 2rem;
 }
 
-.product-category {
+.card__product-category {
   letter-spacing: 0.5rem;
 }
 
-.product-heading {
+.card__product-heading {
   font-size: clamp(1.4rem, 1.4rem + 2vw, 2.6rem);
+  line-height: 1;
 }
 
-.product-description {
+.card__product-description {
   font-size: clamp(0.875rem, 0.45rem + 2vw, 0.97rem);
   word-spacing: 3px;
-  line-height: 2.3;
+  line-height: 1.9;
 }
 
-.price {
+.card__product-price {
   align-items: center;
   gap: 1.25rem;
   height: 3rem;
 }
 
-#new-price {
+.card__product-price #new-price {
   font-size: 2.625rem;
 }
 
-#old-price {
-  color: var(--dark-grayish-blue);
+.card__product-price #old-price {
+  color: var(--clr-neutral-600);
   font-size: 1rem;
   text-decoration: line-through;
 }
 
-button {
-  background-color: var(--dark-cyan);
+.button {
+  background-color: var(--clr-primary);
   border: none;
-  color: var(--white);
+  color: var(--cl-neutral-200);
   cursor: pointer;
   font-size: 0.9687rem;
   font-weight: 700;
@@ -127,17 +128,22 @@ button {
   transition: 0.2s ease-in;
 }
 
-button:hover {
+.button:is(:hover, :focus-visible) {
   --darker-cyan: hsl(158, 36%, 25%);
   background: var(--darker-cyan);
 }
 
-button img {
+.button:focus-visible {
+  outline: 2px dotted var(--clr-primary);
+  outline-offset: 5px;
+}
+
+.button img {
   width: 1rem;
 }
 
 .attribution {
-  font-size: clamp(0.7125rem, calc(0.7rem + 1.2vw), 1rem);
+  font-size: clamp(0.7125rem, 0.7rem + 1.2vw, 1rem);
   margin-bottom: 1rem;
   text-align: center;
   width: 90%;
@@ -146,13 +152,22 @@ button img {
 .attribution a {
   font-weight: 700;
   text-decoration: none;
+  outline: none;
+  border-radius: 4px;
+  color: var(--clr-primary);
+  text-decoration: none;
+  outline-offset: 3px;
 }
 
 .attribution a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 44.937em) {
+.attribution a:focus-visible {
+  outline: 2px solid var(--clr-primary);
+}
+
+@media (max-width: 44.937em) {
   body {
     gap: 0;
   }
@@ -162,14 +177,15 @@ button img {
     height: auto;
     padding-bottom: 0.625rem;
     margin: 2rem 0;
+    max-width: 400px;
   }
 
-  .product-info {
+  .card__product-info {
     padding: 1rem 1.4rem 1rem;
     row-gap: 0.8125rem;
   }
 
-  .product-description {
+  .card__product-description {
     line-height: 1.8;
   }
 
@@ -181,7 +197,7 @@ button img {
     font-size: 0.9375rem;
   }
 
-  button {
+  .button {
     padding: 1rem;
   }
 

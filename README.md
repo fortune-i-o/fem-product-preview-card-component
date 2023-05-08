@@ -9,7 +9,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
+  - [Technology Used](#technology-used)
+  - [Folder Structure](#folder-structure)
 - [Author](#author)
 
 ## Overview
@@ -23,23 +24,36 @@ Users should be able to:
 
 ### Screenshot
 
-![product-preview-card-component-desktop](screenshots/product-preview-card-component-desktop.png)
+![website preview](screenshots/product-preview-card-component-desktop.png)
 
 ### Links
 
-- Solution URL: [frontendmentor.io/solutions/product-preview-card-component-_E9Cub8JFe](https://www.frontendmentor.io/solutions/product-preview-card-component-_E9Cub8JFe)
-- Live Site URL: [fem-product-preview-card-component.pages.dev](https://fem-product-preview-card-component.pages.dev/)
+- **Solution:** [frontendmentor.io/solutions/product-preview-card-component-\_E9Cub8JFe](https://www.frontendmentor.io/solutions/product-preview-card-component-_E9Cub8JFe)
+- **Live Site:** [fem-product-preview-card-component.pages.dev](https://fem-product-preview-card-component.pages.dev/)
 
 ## My process
 
-### Built with
+### Technology Used
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+This project was built using the following frontend technologies and methodologies:
+
+- **Semantic HTML5 markup:** To provide a clear and meaningful structure to the content.
+- **CSS custom properties:** To efficiently manage and reuse style values throughout the project.
+- **Flexbox:** To create flexible and responsive layouts.
+- **BEM (Block Element Modifier):** To create modular, reusable, and maintainable CSS code.
+
+### Folder Structure
+
+```markdown
+./
+├─ assets/
+│ ├─ css/
+│ └─ images/
+├─ screenshots/
+├─ index.html
+└─ README.md
+```
 
 ## Author
 
-- Website - [fortune-io-socials](https://fortune-io-socials.pages.dev/)
-- Frontend Mentor - [@fortune-i-o](https://www.frontendmentor.io/profile/fortune-i-o)
-- Twitter - [@fortune_oi](https://www.twitter.com/fortune_oi)
+This project was created by **Fortune Iyoha**, a passionate web developer. If you want to connect with me or view more of my projects, you can visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/fortune-i-o) or follow me on [Twitter](https://twitter.com/fortuneiyoha) for updates and web development discussions.
