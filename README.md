@@ -46,9 +46,8 @@ This project was built using the following frontend technologies and methodologi
 
 ```markdown
 ./
-├─ assets/
-│ ├─ css/
-│ └─ images/
+├─ css/
+├─ images/
 ├─ screenshots/
 ├─ index.html
 └─ README.md
