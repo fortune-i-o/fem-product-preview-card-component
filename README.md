@@ -49,8 +49,8 @@ This project was built using the following frontend technologies and methodologi
 ├─ css/
 ├─ images/
 ├─ screenshots/
-├─ index.html
-└─ README.md
+├─ README.md
+└─ index.html
 ```
 
 ## Author
